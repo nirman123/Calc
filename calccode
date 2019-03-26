@@ -1,0 +1,74 @@
+#Creating a custom calculator application for addition, substraction, multiplication, and division
+
+
+def addition(): #Cretion of the function named addition
+    a=float(input("Enter the first number:"))
+    b=float(input("Enter the second number:"))
+    c=a+b
+    print("The result is: ", + c)
+    return a+b
+
+
+def substraction():
+    c=float(input("Enter the first number:"))
+    d=float(input("Enter the second number:"))
+    e=c-d
+    print("The result is: ", + e)
+    return c-d
+
+def multiplication():
+    e=float(input("Enter the first number:"))#using float to convert input string to float
+    f=float(input("Enter the second number:")) #input returns string value in Python
+    h= e*f
+    print("Your result is: ",+ h)
+    
+
+def division():
+    g=float(input("Enter the first number:"))
+    h=float(input("Enter the second number:"))
+    i=g/h
+    print("The result is: ", + i) #making use of a str function
+    return g/h
+    
+def control_program():
+    ans=input("Enter 1 for addition, 2 for substraction, 3 for multiplicatio, and 4 for division")
+    
+    if ans=='1': #using conditional statment to give user a choice
+            addition()
+    elif ans=='2':
+            substraction()
+    elif ans=='3':
+            multiplication()
+    elif ans=='4':
+            division()
+    else:
+            print("You have chosen a wrong commmand.")
+            print("Please enter the correct number from 1-4")
+            control_program()
+
+    ta=input("Do you want to try again? (Yes or No")
+    if ta=="Yes" or ta=="yes":
+        control_program()
+    else:
+      print("Good Bye!")
+        
+            
+def control_program1():
+
+    ans=input("Enter 1 for addition, 2 for substraction, 3 for multiplicatio, and 4 for division")
+      
+    if ans=='1': #using conditional statment to give user a choice
+            addition()
+    elif ans=='2':
+            substraction()
+    elif ans=='3':
+            multiplication()
+    elif ans=='4':
+            division()    
+
+control_program()
+k=input("Press any key to exit") #for stopping Python from closing immediately
+
+
+    
+
